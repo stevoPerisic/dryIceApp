@@ -1,0 +1,148 @@
+// global styles
+".container": {
+	backgroundColor:"black",
+	fullscreen: true,
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '100' },
+        endPoint: { x: '0', y: '800' },
+        colors: ['#f0f0f0', '#74BBFB'],
+        backFillStart: false
+    }
+},
+"Label": {
+	left: "5%",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	top: 10,
+	font: {
+    	fontSize: '18dp'
+    }
+},
+"View":{
+	width: '95%',
+	top: "0.5%"
+},
+".form":{
+	top: 5,
+	layout: 'vertical'
+},
+".formTextField":{
+	top: 5,
+	left: 0,
+	width: "100%",
+	height: 52,
+	color: "#333"
+},
+".button":{
+	left: 0,
+	width: '99.5%',
+	height: 52,
+	borderRadius: 10,
+	borderWidth: 1,
+	borderColor: "#f0f0f0",
+	backgroundGradient: {
+        type: 'linear',
+        startPoint: { x: '0', y: '0' },
+        endPoint: { x: '0', y: '100' },
+        colors: ['#259E00', '#62bb47'],
+        backFillStart: false
+    },
+    backgroundSelectedColor: '#34aadc',
+    backgroundFocusedColor: '#34aadc',
+    font: {
+    	fontSize: '18dp',
+    	fontWeight: "bold"
+    },
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    color: '#fff'
+},
+".link":{
+	left: '25%',
+	width: '50%',
+	height: 52,
+	color: '#5e86dc',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
+},
+".underline":{
+	left: '35%',
+	width: '30%',
+	height: 1,
+	top: -10,
+	backgroundColor: '#5e86dc'
+}
+
+// header
+"#header":{
+	top: 0,
+	height: 40,
+	width: '100%',
+	backgroundColor: "#f0f0f0",
+	borderWidth: 1,
+	borderColor: "#dadada",
+	zIndex: 2
+},
+"#welcome":{
+	font:{
+		fontSize: '18dp',
+		fontWeight: 'bold'
+	}
+}
+
+"#logIn":{
+	top: 40
+}
+"#password":{
+	passwordMask: true
+}
+
+// registerUser
+"#registerUser":{
+	top:40
+}
+
+
+// registerSite
+"#registerSite":{
+	top:40
+}
+
+// orderForm
+"#placeOrder":{
+	top:30
+},
+"#switchWrap":{
+	top: 10,
+	height: 42,
+	width: "100%"
+}
+"#sameDay_lbl":{
+	width: '60%',
+}
+"#sameDaySwitch":{
+	right: 0,
+	top: 0
+},
+"#sliderIncrements":{
+	height: 26,
+	width: "100%",
+	layout: "horizontal"
+},
+".increments_lbl":{
+	left: '0.8%',
+	width: '8.4%',
+	font:{
+		fontSize: '14dp'
+	}
+}
+"#slider":{
+	top: 20
+},
+"#submitOrder":{
+	top: 20
+}
+
+
+
