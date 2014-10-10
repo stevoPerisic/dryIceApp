@@ -23,7 +23,7 @@ function Controller() {
         if (!model) return false;
         _.each(_form.children, function(input) {
             if (input.data_role && "formInput" === input.data_role) {
-                if (1 > input.value.length) {
+                if (input.value.length < 1) {
                     alert("Must enter value in the field");
                     return false;
                 }
@@ -121,9 +121,15 @@ function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     this.__controllerPath = "index";
     if (arguments[0]) {
-        __processArg(arguments[0], "__parentSymbol");
-        __processArg(arguments[0], "$model");
-        __processArg(arguments[0], "__itemTemplate");
+        {
+            __processArg(arguments[0], "__parentSymbol");
+        }
+        {
+            __processArg(arguments[0], "$model");
+        }
+        {
+            __processArg(arguments[0], "__itemTemplate");
+        }
     }
     var $ = this;
     var exports = {};

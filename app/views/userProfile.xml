@@ -1,0 +1,5 @@
+<Alloy>
+	<View id="userProfile" class="container">
+		<Label>User Profile page</Label>
+	</View>
+</Alloy>

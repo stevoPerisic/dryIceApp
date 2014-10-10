@@ -1,0 +1,9 @@
+<Alloy>
+	<View id="logIn" class="container">
+		<TextField id="username" class="formTextField" data_role="formInput"/>
+        <TextField id="password" class="formTextField" data_role="formInput"/>
+		<Label id="logIn_Btn" class="button"/>
+		<Label id="register" class="link"/>
+		<View class="underline"/>
+	</View>
+</Alloy>

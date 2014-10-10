@@ -1,0 +1,11 @@
+<Alloy>
+	<View id="registerUser" class="container">
+		<TextField id="user_name_tf" class="formTextField" data_role="formInput"/>
+		<TextField id="user_lastname_tf" class="formTextField" data_role="formInput"/>
+		<TextField id="user_title_tf" class="formTextField" data_role="formInput"/>
+		<TextField id="user_telNum_tf" class="formTextField" data_role="formInput"/>
+		<TextField id="user_email_tf" class="formTextField" data_role="formInput"/>
+		<TextField id="user_password_tf" class="formTextField" data_role="formInput"/>
+		<Label id="submitUserRegistration" class="button"/>
+	</View>
+</Alloy>

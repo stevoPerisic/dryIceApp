@@ -1,5 +1,5 @@
 function S4() {
-    return (0 | 65536 * (1 + Math.random())).toString(16).substring(1);
+    return (65536 * (1 + Math.random()) | 0).toString(16).substring(1);
 }
 
 function guid() {
@@ -24,7 +24,7 @@ function apiCall(_options, _callback) {
         });
         xhr.open(_options.type, _options.url);
         xhr.onload = function() {
-            var responseJSON, error, success = 304 >= this.status ? "ok" : "error", status = true;
+            var responseJSON, error, success = this.status <= 304 ? "ok" : "error", status = true;
             _options.eTagEnabled && success && setETag(_options.url, xhr.getResponseHeader("ETag"));
             if (304 != this.status && 204 != this.status) try {
                 responseJSON = JSON.parse(this.responseText);
@@ -204,7 +204,9 @@ function Sync(method, model, opts) {
         logger(DEBUG, "delete options", params);
         apiCall(params, function(_response) {
             if (_response.success) {
-                parseJSON(DEBUG, _response, parentNode);
+                {
+                    parseJSON(DEBUG, _response, parentNode);
+                }
                 params.success(null, _response.responseText);
                 model.trigger("fetch");
             } else {

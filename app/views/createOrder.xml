@@ -1,0 +1,32 @@
+<Alloy>
+	<View id="placeOrder" class="container">
+		<View id="switchWrap">
+			<Label id="sameDay_lbl"/>
+			<Switch id="sameDaySwitch" value="true" titleOn="YES" titleOff="NO" data_role="formInput"/>
+		</View>
+		<Label id="selectWeight_lbl"/>
+		<View id="sliderIncrements">
+			<Label class="increments_lbl" text="0"/>
+			<Label class="increments_lbl" text="5"/>
+			<Label class="increments_lbl" text="10"/>
+			<Label class="increments_lbl" text="15"/>
+			<Label class="increments_lbl" text="20"/>
+			<Label class="increments_lbl" text="25"/>
+			<Label class="increments_lbl" text="30"/>
+			<Label class="increments_lbl" text="35"/>
+			<Label class="increments_lbl" text="40"/>
+			<Label class="increments_lbl" text="45"/>
+			<Label class="increments_lbl" text="50"/>
+		</View>
+		<Slider id="slider" min="0" max="10" width="100%" value="1" increment="5" data_role="formInput"/>
+		<Label id="submitOrder" class="button"/>
+	</View>
+	<View id="orderSuccess">
+		<!-- once the order is placed show confirmation -->
+		<Label id="confirmation"/>
+	</View>
+	<View id="orderFailed">
+		<!-- in case the order fails -->
+		<Label id="failedOrder"/>
+	</View>
+</Alloy>
