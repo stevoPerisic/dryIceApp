@@ -84,31 +84,20 @@
 	borderColor: "#dadada",
 	zIndex: 2
 },
-"#welcome":{
-	font:{
-		fontSize: '18dp',
-		fontWeight: 'bold'
-	}
-}
-
 "#logIn":{
 	top: 40
-}
+},
 "#password":{
 	passwordMask: true
-}
-
+},
 // registerUser
 "#registerUser":{
 	top:40
-}
-
-
+},
 // registerSite
 "#registerSite":{
 	top:40
-}
-
+},
 // orderForm
 "#placeOrder":{
 	top:30
@@ -117,10 +106,10 @@
 	top: 10,
 	height: 42,
 	width: "100%"
-}
+},
 "#sameDay_lbl":{
 	width: '60%',
-}
+},
 "#sameDaySwitch":{
 	right: 0,
 	top: 0
@@ -136,7 +125,7 @@
 	font:{
 		fontSize: '14dp'
 	}
-}
+},
 "#slider":{
 	top: 20
 },
