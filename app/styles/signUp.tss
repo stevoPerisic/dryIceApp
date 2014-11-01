@@ -1,4 +1,26 @@
-
-".container" : {
-  
+"#registerUser" : {
+	"height": "100%",
+	"layout": "vertical"
+},
+"#formHolder":{
+	"height": "250dp",
+	"layout": "vertical"
+},
+".dropShadow":{}
+"#user_name_tf":{
+	"top": 0	
+},
+"#user_lastname_tf":{
+	"top": -1
+},
+"#user_email_tf":{
+	"top": -1,
+	"keyboardType": Titanium.UI.KEYBOARD_EMAIL
+},
+"#user_password_tf":{
+	"top": -1,
+	"passwordMask": true	
+},
+"#signUp_btn":{
+	"top": 10
 }

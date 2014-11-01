@@ -1,7 +1,13 @@
 <Alloy>
-	<Window class="container">
-		<View id="header">
-			<Label id="headerTxt"/>
+	<Window>
+		<ImageView id="background" image="/images/appBackground.png"/>
+		<View id="content">
+			<View id="startPage" class="container">
+				<Label id="welcome">Welcome to Dry Ice App!</Label>
+				<Label id="signUp" class="button buttonWhite">SIGN UP</Label>
+				<Label id="signIn" class="button buttonWhite">SIGN IN</Label>
+			</View>
+			<View id="opacity"/>
 		</View>
 	</Window>
 </Alloy>

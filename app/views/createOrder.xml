@@ -1,32 +1,52 @@
 <Alloy>
 	<View id="placeOrder" class="container">
-		<View id="switchWrap">
-			<Label id="sameDay_lbl"/>
-			<Switch id="sameDaySwitch" value="true" titleOn="YES" titleOff="NO" data_role="formInput"/>
-		</View>
-		<Label id="selectWeight_lbl"/>
-		<View id="sliderIncrements">
-			<Label class="increments_lbl" text="0"/>
-			<Label class="increments_lbl" text="5"/>
-			<Label class="increments_lbl" text="10"/>
-			<Label class="increments_lbl" text="15"/>
-			<Label class="increments_lbl" text="20"/>
-			<Label class="increments_lbl" text="25"/>
-			<Label class="increments_lbl" text="30"/>
-			<Label class="increments_lbl" text="35"/>
-			<Label class="increments_lbl" text="40"/>
-			<Label class="increments_lbl" text="45"/>
-			<Label class="increments_lbl" text="50"/>
-		</View>
-		<Slider id="slider" min="0" max="10" width="100%" value="1" increment="5" data_role="formInput"/>
-		<Label id="submitOrder" class="button"/>
+		<ScrollView id="formHolder">
+			<View id="switchWrap" class="formTextField">
+				<Label id="sameDay_lbl"/>
+				<Switch id="sameDaySwitch" value="true" titleOn="YES" titleOff="NO"/>
+			</View>
+			
+			<View id="sliderWrap" class="formTextField">
+				<Label id="selectWeight_lbl"/>
+				<View id="sliderIncrements">
+					<!-- <Label id="zero" class="increments_lbl" text="0"/> -->
+					<Label id="zero" class="increments_lbl" text="5"/>
+					<Label class="increments_lbl" text="10"/>
+					<Label class="increments_lbl" text="15"/>
+					<Label class="increments_lbl" text="20"/>
+					<Label class="increments_lbl" text="25"/>
+					<Label class="increments_lbl" text="30"/>
+					<Label class="increments_lbl" text="35"/>
+					<Label class="increments_lbl" text="40"/>
+					<Label class="increments_lbl" text="45"/>
+					<Label class="increments_lbl" text="50"/>
+				</View>
+				<Slider id="slider" min="1" max="10" width="90%" value="1" increment="5"/>
+			</View>
+
+			<TextField id="site_address1_tf" class="formTextField" data_role="formInput" onReturn="moveFormUp"/>
+			<!-- site street address -->
+
+			<View id="cityStateZip_Wrap" class="formTextField">
+				<TextField id="site_city_tf" class="formTextField" data_role="formInput" onReturn="moveFormUp"/>
+				<!-- site city -->
+				<TextField id="site_state_tf" class="formTextField" data_role="formInput" onReturn="moveFormUp"/>
+				<!-- site state -->
+				<TextField id="site_zip_tf" class="formTextField" data_role="formInput"/>
+				<!-- site zip code -->
+			</View>
+			<View class="dropShadow"/>
+			<Label id="submitOrder" class="button buttonBlue"/>
+		</ScrollView>
+
+		
 	</View>
-	<View id="orderSuccess">
-		<!-- once the order is placed show confirmation -->
-		<Label id="confirmation"/>
+
+
+
+	<!-- <View id="orderSuccess">
 	</View>
 	<View id="orderFailed">
-		<!-- in case the order fails -->
 		<Label id="failedOrder"/>
-	</View>
+	</View> -->
 </Alloy>

@@ -1,6 +1,8 @@
 {
 	"global": {}, 
-	"env:development": {}, 
+	"env:development": {
+		
+	}, 
 	"env:test": {}, 
 	"env:production": {}, 
 	"os:android": {},

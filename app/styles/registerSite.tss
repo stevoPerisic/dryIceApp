@@ -1,4 +1,26 @@
 
-".container" : {
-  
+".container" : {},
+"#registerSite_text":{
+	"top": 0
+}
+"#site_name_tf":{
+	"bottom": "315dp"	
+},
+"#site_address1_tf":{
+	"bottom": "272dp"	
+},
+"#site_address2_tf":{
+	"bottom": "229dp"
+},
+"#site_city_tf":{
+	"bottom": "186dp"	
+},
+"#site_state_tf":{
+	"bottom": "143dp"	
+},
+"#site_zip_tf":{
+	"bottom": "100dp"	
+},
+"#submitSiteRegistration":{
+	"bottom": "40dp"
 }

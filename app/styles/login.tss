@@ -1,4 +1,27 @@
-
-".container" : {
-  
-}
+"#logIn":{
+	"height": "100%",
+	"layout": "vertical"
+},
+"#formHolder":{
+	"height": "250dp",
+	"layout": "vertical"
+},
+"#username": {
+	"top": 0,
+	"keyboardType": Titanium.UI.KEYBOARD_EMAIL
+},
+"#password":{
+	"top": -1,
+	"passwordMask":true
+},
+"#forgotPassword":{
+	"top": 10,
+	"color": "#666",
+	"font":{
+		"fontSize": "12dp"
+	}
+},
+"#logIn_Btn":{
+	"top": 10
+},
+".dropShadow":{}

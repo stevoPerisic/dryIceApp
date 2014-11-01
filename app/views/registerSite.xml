@@ -1,18 +1,20 @@
 <Alloy>
 	<View id="registerSite" class="container">
-		<TextField id="site_name_tf" class="formTextField" data_role="formInput"/>
-		<!-- site name -->
-		<TextField id="site_address1_tf" class="formTextField" data_role="formInput"/>
-		<!-- site street address -->
-		<TextField id="site_address2_tf" class="formTextField" data_role="formInput"/>
-		<!-- site suite -->
-		<TextField id="site_city_tf" class="formTextField" data_role="formInput"/>
-		<!-- site city -->
-		<TextField id="site_state_tf" class="formTextField" data_role="formInput"/>
-		<!-- site state -->
-		<TextField id="site_zip_tf" class="formTextField" data_role="formInput"/>
-		<!-- site zip code -->
-		<Label id="submitSiteRegistration" class="button"/>
-
+		<Label id="registerSite_text"></Label>
+		<View id="formHolder">
+			<!-- <TextField id="site_name_tf" class="formTextField" data_role="formInput"/> -->
+			<!-- site name -->
+			<TextField id="site_address1_tf" class="formTextField" data_role="formInput"/>
+			<!-- site street address -->
+			<TextField id="site_address2_tf" class="formTextField" data_role="formInput"/>
+			<!-- site suite -->
+			<TextField id="site_city_tf" class="formTextField" data_role="formInput"/>
+			<!-- site city -->
+			<TextField id="site_state_tf" class="formTextField" data_role="formInput"/>
+			<!-- site state -->
+			<TextField id="site_zip_tf" class="formTextField" data_role="formInput"/>
+			<!-- site zip code -->
+			<Label id="submitSiteRegistration" class="button buttonBlue"/>
+		</View>
 	</View>
 </Alloy>

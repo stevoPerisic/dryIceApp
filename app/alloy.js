@@ -11,21 +11,19 @@
 // Alloy.Globals.someGlobalFunction = function(){};
 console.log('Hello, Dry Ice app is starting up....');
 
+require('ti-mocha');
+
+// init the app namespace
 var DryIce = DryIce || {};
-// init the user model
-DryIce.user = DryIce.user || {};
-
+// list properties
 var props = Ti.App.Properties.listProperties();
-
 for (var i=0, ilen=props.length; i<ilen; i++){
     var value = Ti.App.Properties.getString(props[i]);
     console.log("Property: "+props[i] + ' = ' + value);
 }
-
-// string resources
-DryIce.strings = require("resources");
+// load resources
+DryIce.resources = require("resources");
 DryIce.utils = require('utils');
 
-
-
+// we should check if the db is seeded
 

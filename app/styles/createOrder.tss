@@ -1,4 +1,77 @@
+"#placeOrder":{
+	"height": "100%",
+	"layout": "vertical"
+},
+"#formHolder":{
+	"height": "300dp",
+	"layout": "vertical"
+},
+".dropShadow":{},
+"#switchWrap":{
+	"width": "100%",
+	"top": 0,
+	"layout": "horizontal"
+},
+	"#sameDay_lbl":{
+		"top": "10dp"
+	},
+	"#sameDaySwitch":{
+		"top": "6dp",
+		"left": "70dp"
+	}
+"#sliderWrap":{
+	"layout": "vertical",
+	"top": -1,
+	"height": "100dp"
+},
+	"#selectWeight_lbl":{
+		"top": "5dp",
+		"width": "100%",
+		"font":{
+			"fontSize": "12dp"
+		},
+		"textAlign": Titanium.UI.TEXT_ALIGNMENT_LEFT
+	},
+	"#sliderIncrements":{
+		"top": "10dp",
+		"width": "90%",
+		"height": "20dp",
+		"layout": "horizontal",
+		"font":{
+			"fontSize": "12dp"
+		}
+	},
+		".increments_lbl":{
+			"left": 16,
+			"font":{
+				"fontSize": "12dp"
+			}
+		}
+		"#zero":{
+			"left": 10
+		}
+	"#slider":{
+		"width": "90%"
+	},
+"#site_address1_tf":{
+	"top": -1	
+},
+"#cityStateZip_Wrap":{
+	"top": -1,
+	"layout": "horizontal"
+},
+	"#site_city_tf":{
+		"width": "45%"
+	},
+	"#site_state_tf":{
+		"width": "20%",
+		"left": -1
+	},
+	"#site_zip_tf":{
+		"width": "35.5%",
+		"left": -1
+	}
 
-".container" : {
-  
+"#submitOrder":{
+	"top": 10
 }

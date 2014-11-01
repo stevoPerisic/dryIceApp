@@ -1,0 +1,80 @@
+"Window":{
+	"backgroundColor": "#f2f2f2",
+	"fullscreen": false
+},
+"#background[platform=ios]":{
+	"top": "20dp",
+	"left": 0
+},
+"#background[platform=android]":{
+	"top": 0,
+	"left": 0
+}
+"#content[platform=ios]":{
+	"top": "20dp",
+	// "borderColor": "red"
+},
+"#content":{
+	"top": 0,
+	"backgroundColor": "transparent",
+	"borderColor": "#ccc"
+},
+"#opacity":{
+	"top": 0,
+	"borderColor": "#ccc",
+	"backgroundColor": "#fff",
+	"opacity": 0.7	
+},
+".container":{
+	"height": "80%",
+	"width" : "100%",
+	"layout": "composite",
+	"bottom": "0dp"
+},
+".formTextField[platform=android]":{
+	"backgroundColor": "transparent"	
+},
+".formTextField":{
+	"height": "44dp",
+	"width": "100%",
+	"borderColor": "#ccc",
+	"borderWidth": "1dp",
+	"autocorrect": false
+},
+".button":{
+	"height": "44dp",
+	"width": "95%",
+	"borderRadius": "5dp",
+	"borderColor": "#1c1d1c",
+	"borderWidth": "2dp",
+    "backgroundImage": "none",
+    "textAlign": Titanium.UI.TEXT_ALIGNMENT_CENTER,
+    "font":{
+    	"fontSize": "13dp",
+    	"fontWeight": "light"
+    }
+},
+".buttonWhite":{
+	"backgroundColor": "#fff" 
+},
+".buttonBlue":{
+	"color": "#fff",
+	"borderColor": "#1d62f0",
+	"backgroundColor": "#1d62f0"
+},
+".dropShadow":{
+	"height": "8dp",
+	"backgroundColor": "transparent",
+	"backgroundGradient":{
+		type: 'linear',
+        startPoint: { x: '0', y: '-70' },
+        endPoint: { x: '0', y: '6' },
+        colors: ['#dadada', 'transparent'],
+        backFillStart: false
+	}
+}
+
+
+
+
+

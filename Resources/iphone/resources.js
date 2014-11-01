@@ -1,0 +1,31 @@
+var strings = {
+    submit: "Submit",
+    next: "Next",
+    previous: "Previous",
+    welcomeHeader: "Welcome to Dry Ice App!",
+    registerSite: "REGISTER SITE",
+    logIn: "SIGN INTO DRYICE",
+    username: "	Email",
+    password: "	Password",
+    register: "SIGN UP FOR DRYICE",
+    registerUser: "Please enter your credentials.",
+    user_name: "	First Name",
+    user_lastname: "	Last Name",
+    user_email_tf: "	Email",
+    user_password_tf: "	Create Password",
+    registerSite_text: "Please register your site.",
+    site_name_tf: "	Site Name",
+    site_address1_tf: "	Street address (Include Suite #)",
+    site_address2_tf: "	Suite",
+    site_city_tf: "	City",
+    site_state_tf: "  State",
+    site_zip_tf: "  Zip",
+    placeOrder: "Place your order.",
+    sameDay_lbl: "	Same day delivery?",
+    selectWeight_lbl: "	Select weight:",
+    submitOrder: "ORDER",
+    confirmation: "Your order was sent successfully!",
+    error: "Something went wrong, we saved your order and will process it shortly."
+};
+
+exports.strings = strings;

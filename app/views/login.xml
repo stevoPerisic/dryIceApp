@@ -1,9 +1,11 @@
 <Alloy>
 	<View id="logIn" class="container">
-		<TextField id="username" class="formTextField" data_role="formInput"/>
-        <TextField id="password" class="formTextField" data_role="formInput"/>
-		<Label id="logIn_Btn" class="button"/>
-		<Label id="register" class="link"/>
-		<View class="underline"/>
+		<ScrollView id="formHolder">
+			<TextField id="username" class="formTextField" data_role="formInput" onReturn="moveFormUp"/>
+    	    <TextField id="password" class="formTextField" data_role="formInput"/>
+    	    <View class="dropShadow"/>
+        	<Label id="forgotPassword">Forgot your password?</Label>
+			<Label id="logIn_Btn" class="button buttonBlue" onClick="checkCreds"/>
+		</ScrollView>
 	</View>
 </Alloy>
